@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies Website</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/animate.css">
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <!-- side navbar -->
+    <div class="navBar d-flex position-fixed">
+        <div class="sideLinks bg-dark">
+
+            <ul class="list-unstyled mx-5 mt-5">
+
+                <li id="trendMovie" data-wow-duration="3s" class="wow bounceInDown"><a href="#">trending</a></li>
+                <li  data-wow-duration="6s" class="wow bounceInDown"><a href="#" >now_playing</a></li>
+                <li data-wow-duration="5s" class="wow bounceInDown"><a href="#" >popular</a></li>
+                <li  data-wow-duration="4s" class="wow bounceInDown"><a href="#" >top_rated</a></li>
+                <li data-wow-duration="2s" class="wow bounceInDown"><a href="#" >upcoming</a></li>
+                <li data-wow-duration="1s" class="wow bounceInDown"><a href="#contact">Contact Us</a></li>
+            </ul>
+
+            <div class="side-footer">
+                <div class="icon-footer mx-5 text-white mt-5 pt-5 ">
+                    <i class="fa-brands fa-facebook-f mx-2 "></i>
+                    <i class="fa-brands fa-twitter mx-2"></i>
+                    <i class="fa-solid fa-globe"></i>
+                </div>
+                <div data-wow-duration="5s" class="copy-right text-white mx-5 mt-5 wow bounceInUp">
+                    <p>Copyright Â© 2019 All Rights Reserved.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="sideBar bg-white  ">
+            <ul class="list-unstyled py-5 vh-100 d-flex flex-column justify-content-between align-items-center">
+
+                <li><img src="./logo.png" alt=""> </li>
+                <div>
+                    <li> <i class="fa-solid fa-xmark fs-2 "></i></li>
+                    <li><i class="fa-solid fa-bars fs-2"></i></li>
+                </div>
+
+                <div class="icons">
+                    <li><i class="fa-solid fa-globe"></i></li>
+                    <li><i class="fa-solid fa-share-nodes mt-2"></i></li>
+                </div>
+
+            </ul>
+        </div>
+
+    </div>
+    <!----------------------------------- -->
+    <!-- Search bar -->
+    <div class="container ">
+        <div class="row">
+            <div class="col-md-6">
+                <input class="form-control w-75 m-auto mt-5" type="text" id="searchBar" placeholder="get movies by word...">
+            </div>
+            <div class="col-md-6">
+                <input class="form-control w-75 m-auto mt-5" type="text" id="searchFilm" placeholder="Search">
+            </div>
+        </div>
+    </div>
+    <!-- --------------------------------------------------------- -->
+
+    <!-- Movies -->
+
+    <div class="container">
+        <div class="row text-white my-3 " id="movieData">
+    </div>
+
+
+
+
+
+    <!-- ------------------------------------------------------- -->
+
+    <!-- Contact Us -->
+
+    <div class="container" id="contact">
+        <h3  class="text-white text-center mt-5 mb-0 ">Contact Us</h3>
+        <div class="row">
+            <div class="col-md-6">
+                <input class="form-control w-75 m-auto mt-4" type="text" id="userName" placeholder="Enter Your Name">
+                <div id="validName" class="alert-danger w-75 m-auto d-none p-3">Frist letter must be capital and Letters
+                    must be (10 : 30) characters ... no numbers</div>
+            </div>
+            <div class="col-md-6">
+                <input class="form-control w-75 m-auto mt-4" type="email" id="userEmail" placeholder="Your Email">
+                <div id="validEmail" class="alert-danger w-75 m-auto text-center d-none"> ex@yahoo.com ( no spaces )
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <input class="form-control w-75 m-auto mt-4 " type="number" id="userPhone" placeholder="Enter phone">
+                <div id="validphone" class="alert-danger w-75 m-auto text-center d-none">must be start 0 " 12 length "
+                </div>
+
+            </div>
+            <div class="col-md-6">
+                <input class="form-control w-75 m-auto mt-4" type="number" id="userAge" placeholder="Your Age">
+                <div id="validAge" class="alert-danger w-75 m-auto text-center d-none">Age must be > 16 "</div>
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <input class="form-control w-75 m-auto mt-4" type="password" id="ueserpass"
+                    placeholder="Enter Password">
+                <div id="validpass" class="alert-danger w-75 m-auto text-center d-none p-3">To check a password between
+                    6 to 20 characters which contain at least one numeric digit, one uppercase and one lowercase letter
+                </div>
+
+            </div>
+            <div class="col-md-6">
+                <input class="form-control w-75 m-auto mt-4" type="password" id="Repassword"
+                    placeholder="Enter Re-Password">
+                <div id="validRepass" class="alert-danger w-75 m-auto text-center d-none"> Password is not valid</div>
+            </div>
+
+            <button disabled id="submitBtn" class="btn btn-outline-danger w-25 mx-5 my-5">Submit</button>
+        </div>
+    </div>
+    <!-- --------------------------------------------------------- -->
+
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
